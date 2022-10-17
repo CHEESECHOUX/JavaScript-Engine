@@ -11,7 +11,7 @@ sports = {
   length: 0,
   name: "sports",
   prototype: {
-    constructor: sports,
+    constructor: sports, // 
     __proto__: Object.prototype // 빌트인 오브젝트에 관련한 메소드들
   },
   __proto__: Function.prototype // bind, apply, call
@@ -21,7 +21,7 @@ sports = {
 1. sports 오브젝트에 prototype 오브젝트 첨부
 
 2. prototype에 constructor 프로퍼티 첨부 : 0개 이상의 property를 작성할 수 있게 됨
-   prototype.constructor가 sports 오브젝트 전체를 참조
+   값에는 object 이름을 작성. prototype.constructor가 sports 오브젝트 전체를 참조 하게 되는 것!
 
 3. prototype에 __proto__ 오브젝트 첨부
 
