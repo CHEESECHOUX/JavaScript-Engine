@@ -1,5 +1,5 @@
 // function object 생성 과정
-const sports = function() {};
+var sports = function() {};
 
 // 생성한 오브젝트가 sports에 할당됨.
 // 오브젝트를 생성하는 시점에는 빈 오브젝트임

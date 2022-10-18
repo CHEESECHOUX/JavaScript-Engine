@@ -1,9 +1,9 @@
 // 실행 컨텍스트 형태
 
 function music() {
-  const point = 123;
+  var point = 123;
   function show() {
-    const title = "crush";
+    var title = "crush";
     // getPoint();
     // this.musicAmount
   };
