@@ -29,3 +29,35 @@ value:200
 8.for-in 문으로 다시 반복해서 
   point: { value: 200 } 오브젝트를 받고 value:200까지 출력
 */
+
+
+//
+var member = {
+  Jan: { item: { title: 'JS북', amount: 100}, point: [10, 20, 30] },
+  Feb: { item: { title: 'JS북', amount: 200}, point: [40, 50, 60] },
+};
+
+var result = 0;
+
+function reduceCallback(prev, curr) {
+  return prev + curr;
+}
+function show(param) {
+  for (var type in param) {
+    if (typeof param[type] === 'object') {
+      ifArray(param[type]);
+    } else {
+      console.log(type, param[type]);
+    }
+  }
+}
+function ifArray(paramArray) {
+  if (Array.isArray(paramArray)) {
+    console.log(paramArray);
+    result = paramArray.reduce(reduceCallback) + result;
+  } else {
+    show(paramArray);
+  }
+}
+
+show(member);
