@@ -31,11 +31,19 @@ value:200
 */
 
 
-//
+
+/*
+// 재귀 함수로 데이터 출력하기
+오브젝트면? 프로터티 이름(title, amount)과 값 출력
+배열이면? 값([10, 20, 30]) 출력 및 값 누적하기
+재귀 호출이 끝나면 누적한 값 출력
+
+데이터 형태
 var member = {
   Jan: { item: { title: 'JS북', amount: 100}, point: [10, 20, 30] },
   Feb: { item: { title: 'JS북', amount: 200}, point: [40, 50, 60] },
 };
+*/
 
 var result = 0;
 
